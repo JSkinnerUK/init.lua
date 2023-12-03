@@ -15,6 +15,24 @@ local plugins = {
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
     { "tpope/vim-fugitive" },
+    
+    {
+        "ThePrimeagen/harpoon", 
+        branch = "master",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    },
+
+    {'nvim-treesitter/nvim-treesitter', build = ":TSUpdate"},
+
+    --LSP
+    {'williamboman/mason.nvim'},
+    {'williamboman/mason-lspconfig.nvim'},
+
+    {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+    {'neovim/nvim-lspconfig'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/nvim-cmp'},
+    {'L3MON4D3/LuaSnip'},
 }
 
 local otps = {}
