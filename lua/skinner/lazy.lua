@@ -17,6 +17,7 @@ local plugins = {
     { "tpope/vim-fugitive" },
     {'jiangmiao/auto-pairs'},
     {'tpope/vim-commentary'},
+    {'zbirenbaum/copilot.lua'},
     
     {
         "ThePrimeagen/harpoon", 
