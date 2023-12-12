@@ -15,7 +15,6 @@ local plugins = {
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
     { "tpope/vim-fugitive" },
-    {'jiangmiao/auto-pairs'},
     {'tpope/vim-commentary'},
     {'zbirenbaum/copilot.lua'},
     

@@ -20,6 +20,10 @@ local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
+  preselect = 'item',
+  completion = {
+    completeopt = 'menu,menuone,noinsert'
+  },
   mapping = cmp.mapping.preset.insert({
     -- `Enter` key to confirm completion
     ['<Tab>'] = cmp.mapping.confirm({select = false}),
