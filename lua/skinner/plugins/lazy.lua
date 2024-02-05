@@ -17,9 +17,17 @@ local plugins = {
     { "tpope/vim-fugitive" },
     {'tpope/vim-commentary'},
     {'zbirenbaum/copilot.lua'},
-    
     {
-        "ThePrimeagen/harpoon", 
+        'nvim-telescope/telescope.nvim',
+        dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+    {
+        'folke/trouble.nvim',
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+
+    {
+        "ThePrimeagen/harpoon",
         branch = "master",
         dependencies = { "nvim-lua/plenary.nvim" }
     },
@@ -34,7 +42,6 @@ local plugins = {
     {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
-    {'L3MON4D3/LuaSnip'},
 }
 
 local otps = {}
