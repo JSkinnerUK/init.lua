@@ -42,8 +42,22 @@ local plugins = {
     {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
+
+    --Git
+    {
+        "NeogitOrg/neogit",
+        dependencies = {
+            "nvim-lua/plenary.nvim",         -- required
+            "sindrets/diffview.nvim",        -- optional - Diff integration
+
+            -- Only one of these is needed, not both.
+            "nvim-telescope/telescope.nvim", -- optional
+            --"ibhagwan/fzf-lua",              -- optional
+        },
+        config = true
+    }
 }
 
-local otps = {}
+local opts = {}
 
 require("lazy").setup(plugins, opts)
