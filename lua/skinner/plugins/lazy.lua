@@ -16,7 +16,7 @@ local plugins = {
 
     { "tpope/vim-fugitive" },
     {'tpope/vim-commentary'},
-    {'zbirenbaum/copilot.lua'},
+
     {
         'nvim-telescope/telescope.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }
