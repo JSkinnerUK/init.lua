@@ -1,6 +1,7 @@
 require("skinner.plugins.lazy")
 
 require("skinner.plugins.catppuccin")
+require("skinner.plugins.chatgpt")
 
 require("skinner.plugins.harpoon")
 require("skinner.plugins.telescope")
