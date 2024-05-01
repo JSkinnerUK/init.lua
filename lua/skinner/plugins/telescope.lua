@@ -1,3 +1,4 @@
+require("telescope").load_extension("git_worktree")
 require('telescope').setup{}
 
 local builtin = require('telescope.builtin')

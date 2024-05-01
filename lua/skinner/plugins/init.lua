@@ -4,6 +4,7 @@ require("skinner.plugins.catppuccin")
 require("skinner.plugins.chatgpt")
 
 require("skinner.plugins.harpoon")
+require("skinner.plugins.lualine")
 require("skinner.plugins.neogit")
 require("skinner.plugins.telescope")
 require("skinner.plugins.trouble")

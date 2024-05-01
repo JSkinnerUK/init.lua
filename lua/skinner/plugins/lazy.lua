@@ -19,7 +19,8 @@ local plugins = {
 
     {
         'nvim-telescope/telescope.nvim',
-        dependencies = { 'nvim-lua/plenary.nvim' }
+        dependencies = { 'nvim-lua/plenary.nvim' },
+        tag = '0.1.5'
     },
     {
         'folke/trouble.nvim',
@@ -68,6 +69,11 @@ local plugins = {
         "nvim-telescope/telescope.nvim"
         }
     },
+    {'ThePrimeagen/git-worktree.nvim'},
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    }
 }
 
 local opts = {}
