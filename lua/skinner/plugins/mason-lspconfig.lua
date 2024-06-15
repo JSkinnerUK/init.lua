@@ -1,8 +1,9 @@
-local lsp_installer_ensure_installed = { 
+local lsp_installer_ensure_installed = {
     -- LSP
     "omnisharp_mono",
     "lua_ls",
     "tsserver",
+    "gopls",
 }
 
 require('mason-lspconfig').setup({
