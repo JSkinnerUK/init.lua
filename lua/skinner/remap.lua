@@ -1,4 +1,4 @@
-vim.g.mapleader = ","
+vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --Move highlighted up/down
@@ -16,6 +16,9 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 --Copy to system clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+--Delete to black-hole register
+vim.keymap.set({ "n", "v" }, "<leader>d", "\"_d")
 
 --Start renaming word under cursor
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
